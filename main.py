@@ -127,7 +127,7 @@ if st.button("🚀 모든 종목 분석 시작"):
                         # [뉴스 분석]
                         st.markdown("**📰 AI 뉴스 최신 브리핑**")
                         try:
-                            raw_news = data['stock'].newsa
+                            raw_news = data['stock'].news
                             if raw_news:
                                 for n in raw_news[:5]:
                                     content = n.get('content', n)
